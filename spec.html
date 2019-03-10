@@ -11837,7 +11837,7 @@
         <h1>Static Semantics: IsValidRegularExpressionLiteral ( _literal_ )</h1>
         <p>The abstract operation IsValidRegularExpressionLiteral determines if its argument is a valid regular expression literal. The following steps are taken:</p>
         <emu-alg>
-          1. Assert: _literal_ is |RegularExpressionLiteral|.
+          1. Assert: _literal_ is a |RegularExpressionLiteral|.
           1. If FlagText of _literal_ contains any code points other than `"g"`, `"i"`, `"m"`, `"s"`, `"u"`, or `"y"`, or if it contains the same code point more than once, return *false*.
           1. Let _P_ be BodyText of _literal_.
           1. If FlagText of _literal_ contains `"u"`,
